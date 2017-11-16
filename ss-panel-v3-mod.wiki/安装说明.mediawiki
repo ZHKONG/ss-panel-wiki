@@ -65,10 +65,10 @@ chmod -R 777 *
 chown -R www:www storage
 </pre>
 修改完了之后，到网站目录下进行一些修改。
-<pre>[root@vultr vhost]# cd /home/wwwroot/ss.panel/
-[root@vultr ss.panel]# chattr -i .user.ini
-[root@vultr ss.panel]# mv .user.ini public
-[root@vultr ss.panel]# cd public
+<pre>cd /home/wwwroot/ss.panel/
+chattr -i .user.ini
+mv .user.ini public
+cd public
 </pre>
 然后就是重新添加回权限。
 <pre>chattr +i .user.ini
